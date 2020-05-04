@@ -10,6 +10,12 @@ Here are some resources explaining with more details how the trick works and the
 - [Picture based, step-by-step performance explanation](https://www.wikihow.com/Do-a-21-Card-Card-Trick)
 - [Video explanation](https://www.youtube.com/watch?v=up0rWk_Q4tY)
 
+## Application
+
+The aplication was developed using the [Decks of Cards API](http://deckofcardsapi.com/). 
+
+The application demo can be found at: [Magic Trick](https://magictrick21.herokuapp.com/)
+
 ## How to run
 
 Clone the project, than in magic-trick repositosy, install dependencies with: 
@@ -24,7 +30,7 @@ Runs the app in the development mode with:
 npm start
 ```
 <br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open (http://localhost:3000) to view it in the browser.
 
 
 ## License
