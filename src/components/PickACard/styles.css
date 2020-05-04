@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+.list-cards h1{
+    text-align: center;
+}
+
 .list-cards p{
     font-size: 20px;
     margin-top: 10px;

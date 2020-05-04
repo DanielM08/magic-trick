@@ -10,6 +10,11 @@ const Piles = ({pileNumber, pileImages, setPiles, setPilePicked, setRound, setPi
     setPileOne(pileNumber[0].toString());
     setPilePicked(pileNumber[1].toString());
     setPileThree(pileNumber[2].toString());
+    setPiles({
+      0:[],
+      1:[],
+      2:[]
+    });
   };
 
   return(

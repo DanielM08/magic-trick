@@ -56,30 +56,7 @@ const ThreePiles = ({ deck_id, setRestart, setStartMagic }) => {
         .catch(err => console.log(err));
     }
   }, [deck_id, remaining, round]);
-  /*
-  useEffect(() =>{
-    if(remaining === 0){
-      api
-        .get(`/${deck_id}/pile/pile0/list/`)
-        .then(resp =>{
-          console.log(resp)
-          api
-            .get(`/${deck_id}/pile/pile1/list/`)
-            .then(resp => {
-              console.log(resp)
-              api
-                .get(`/${deck_id}/pile/pile2/list/`)
-                .then(resp => {
-                  console.log(resp)
-                })
-                .catch(err => console.log(err));
-            })
-            .catch(err => console.log(err));
-        })
-        .catch(err => console.log(err));
-    }
-  }, [deck_id, remaining]);
-  */
+
   useEffect(() => {
     
     if (pilePicked !== null) {      
@@ -163,10 +140,10 @@ const ThreePiles = ({ deck_id, setRestart, setStartMagic }) => {
   const renderPiles = () => {
     return (
       <>  
-      {renderTitle()} 
       {
         piles[2].length > 0 ? (
           <>
+            {renderTitle()}
             <Pile
                 pileNumber = {[1, 0, 2]}
                 pileImages = {piles[0]}
@@ -195,7 +172,7 @@ const ThreePiles = ({ deck_id, setRestart, setStartMagic }) => {
               setPileThree = {setPileThree}
             />
           </>
-        ) : <h1>Wait!</h1>  
+        ) : <h1 className = "wait">Wait!</h1>  
       }
       </>
     );
